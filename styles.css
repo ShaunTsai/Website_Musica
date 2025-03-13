@@ -569,15 +569,23 @@ h3 {
 /* Small Mobile Devices */
 /* Mobile Styles */
 @media (max-width: 480px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
     .container {
-        padding: 0 2.5rem;
-        max-width: 100%;
-        width: 100%;
+        padding: 0;
+        max-width: calc(100% - 3rem);
+        width: calc(100% - 3rem);
+        margin: 0 1.5rem;
         box-sizing: border-box;
     }
 
     section {
-        padding: 3rem 2rem;
+        padding: 3rem 1.5rem;
+        margin: 0 1.5rem;
+        max-width: calc(100% - 3rem);
     }
 
     .about-content,
@@ -628,16 +636,20 @@ h3 {
     .mastercamp-content h3,
     section p,
     section h3 {
-        margin: 1.5rem 3rem;
+        margin: 1.5rem auto;
+        padding: 0 1.5rem;
         line-height: 1.8;
-        max-width: calc(100% - 6rem);
+        max-width: calc(100% - 3rem);
         text-align: justify;
+        box-sizing: border-box;
     }
 
     /* Improve feature items spacing */
     .feature-item {
-        margin: 2rem;
-        padding: 2rem;
+        margin: 2rem 1.5rem;
+        padding: 2rem 1.5rem;
+        max-width: calc(100% - 6rem);
+        box-sizing: border-box;
     }
 
     .feature-item ul,
@@ -656,7 +668,10 @@ h3 {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
-        padding: 0 20px;
+        padding: 0 1.5rem;
+        margin: 0 1.5rem;
+        max-width: calc(100% - 3rem);
+        box-sizing: border-box;
     }
 
     .line-qr {
