@@ -10,29 +10,37 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <div class="logo">Musica Bellethique 法雅音樂</div>
+            <div class="logo-container">
+                <div class="logo">Musica Bellethique 法雅音樂</div>
+            </div>
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#mastercamp">Master Camp</a>
-                <a href="#contact">Contact</a>
+                <a href="#about">關於我們</a>
+                <a href="#mastercamp">2025 「與經紀人有約」聲樂大師營</a>
+                <a href="#contact">聯絡我們</a>
             </div>
         </div>
     </nav>
 
     <header class="hero">
-        <div class="container">
-            <h1>Welcome to Musica Bellethique</h1>
-            <p class="subtitle">Experience the Art of Opera in Paris</p>
-            <a href="#contact" class="cta-button">Enroll Now</a>
+        <div class="container hero-content">
+            <div class="hero-main">
+                <img src="images/logo.png" alt="Musica Bellethique Logo" class="hero-logo-image">
+                <div class="hero-text">
+                    <h1>你的藝術之路，<br>從此通往國際職業舞台。</h1>
+                    <p class="subtitle">2025 法雅音樂「與經紀人有約」聲樂大師營，開放報名中</p>
+                    <a href="https://drive.google.com/file/d/1c0RAx9-KlUUs0G5gFTnCUja3Yh7Bh3qE/view?usp=sharing" class="cta-button">了解詳情</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <section id="about" class="section">
         <div class="container">
-            <h2>About Us</h2>
+            <h2>關於我們</h2>
             <div class="about-content">
                 <div class="text-content">
-                    <p>Musica Bellethique 法雅音樂 is dedicated to nurturing exceptional vocal talent and preserving the rich tradition of opera. Our commitment to excellence has established us as a leading institution in classical vocal education.</p>
+                    <p>由巴黎古典音樂專業經紀人 溫美倫 女士創立。畢業於台大外文系，溫美倫是巴黎索邦大學音樂行政與管理碩士的第一位台灣校友，現任職於 Musicaglotz ，為公司成立以來第一位台灣女性經紀人。
+                        輔導巴黎當代音樂家之音樂行政與經紀工作多年，致力於將歐洲視野與藝文市場經驗帶回台灣，提供高品質的美藝教育。法雅音樂以教育為橋樑，連結台灣古典音樂人才與國際藝術家及專業從業人員，培養具備國際視野的音樂人才。</p>
                 </div>
             </div>
         </div>
@@ -40,27 +48,42 @@
 
     <section id="mastercamp" class="section">
         <div class="container">
-            <h2>Opera Vocalist Master Camp - Paris</h2>
+            <h2>2025 「與經紀人有約」聲樂大師營</h2>
             <div class="mastercamp-content">
                 <div class="features">
                     <div class="feature-item">
-                        <h3>Expert Instruction</h3>
-                        <p>Learn from world-renowned opera professionals</p>
+                        <h3>國際級師資與職業訓練</h3>
+                        <ul>
+                            <li>頂尖師資：來自巴黎高等音樂院、巴黎歌劇院的專家指導</li>
+                            <li>專業培訓：涵蓋技術、演出表現、音樂市場運作</li>
+                            <li>業界連結：與職業古典音樂經紀人深度交流</li>
+                        </ul>
                     </div>
                     <div class="feature-item">
-                        <h3>Immersive Experience</h3>
-                        <p>Train in the heart of Paris's rich musical culture</p>
+                        <h3>與歐洲舞台接軌</h3>
+                        <ul>
+                            <li>巴黎聖梅里教堂公開演出，展示成果</li>
+                            <li>古典音樂經紀人現場評選，挑選優秀學員</li>
+                            <li>2026 年法國職業公開演出機會</li>
+                        </ul>
                     </div>
                     <div class="feature-item">
-                        <h3>Performance Opportunities</h3>
-                        <p>Showcase your talent in prestigious venues</p>
+                        <h3>全球音樂人交流與認證</h3>
+                        <ul>
+                            <li>跨國交流：中國、香港聲樂家共同參與</li>
+                            <li>國際級藝術視野，拓展職業生涯</li>
+                            <li>知名教授親筆簽名結業證書，助力未來發展</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="video-section">
-                    <h3>Watch Our Program Highlights</h3>
+                    <h3>大師營 - 大師訪談影片</h3>
                     <div class="video-container">
                         <!-- Replace VIDEO_ID with your YouTube video ID -->
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="download-section">
+                        <a href="https://drive.google.com/file/d/1c0RAx9-KlUUs0G5gFTnCUja3Yh7Bh3qE/view?usp=sharing" class="download-button">下載活動簡章，了解詳情</a>
                     </div>
                 </div>
             </div>
@@ -69,14 +92,13 @@
 
     <section id="contact" class="section">
         <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-content">
-                <form id="contactForm" class="contact-form">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
+            <h2>聯絡我們</h2>
+            <h3>加入 Line 官方帳號，將由專員為您諮詢服務</h3>
+            <div class="line-contact-content">
+                <img src="https://qr-official.line.me/gs/M_450spaou_BW.png?oat_content=qr" alt="LINE QR Code" class="line-qr">
+                <a href="https://lin.ee/8x5GFC2" class="line-button">
+                    <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="72" border="0">
+                </a>
             </div>
         </div>
     </section>
