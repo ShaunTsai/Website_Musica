@@ -576,16 +576,16 @@ h3 {
 
     .container {
         padding: 0;
-        max-width: calc(100% - 3rem);
-        width: calc(100% - 3rem);
-        margin: 0 1.5rem;
+        max-width: calc(100% - 6rem);
+        width: calc(100% - 6rem);
+        margin: 0 3rem;
         box-sizing: border-box;
     }
 
     section {
-        padding: 3rem 1.5rem;
-        margin: 0 1.5rem;
-        max-width: calc(100% - 3rem);
+        padding: 2.5rem;
+        margin: 0 3rem;
+        max-width: calc(100% - 6rem);
     }
 
     .about-content,
@@ -637,17 +637,17 @@ h3 {
     section p,
     section h3 {
         margin: 1.5rem auto;
-        padding: 0 1.5rem;
+        padding: 0 3rem;
         line-height: 1.8;
-        max-width: calc(100% - 3rem);
+        max-width: calc(100% - 6rem);
         text-align: justify;
         box-sizing: border-box;
     }
 
     /* Improve feature items spacing */
     .feature-item {
-        margin: 2rem 1.5rem;
-        padding: 2rem 1.5rem;
+        margin: 2rem;
+        padding: 2rem;
         max-width: calc(100% - 6rem);
         box-sizing: border-box;
     }
@@ -655,7 +655,7 @@ h3 {
     .feature-item ul,
     .feature-item ol {
         padding-left: 2rem;
-        margin: 1rem 0;
+        margin: 0.8rem 0;
     }
 
     .feature-item li {
@@ -668,9 +668,9 @@ h3 {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
-        padding: 0 1.5rem;
-        margin: 0 1.5rem;
-        max-width: calc(100% - 3rem);
+        padding: 0 3rem;
+        margin: 0 3rem;
+        max-width: calc(100% - 6rem);
         box-sizing: border-box;
     }
 
