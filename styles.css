@@ -89,6 +89,38 @@ body {
     padding: 0 20px;
 }
 
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--dark-blue);
+    margin: 5px 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
 /* Navbar */
 .navbar {
     background-color: white;
@@ -167,6 +199,35 @@ body {
     align-items: stretch;
     gap: 2rem;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .hero-logo-image {
+        height: 200px;
+        margin-bottom: 2rem;
+    }
+
+    .hero-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero .subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .hero-text {
@@ -506,7 +567,109 @@ h3 {
 }
 
 /* Small Mobile Devices */
+/* Mobile Styles */
 @media (max-width: 480px) {
+    .container {
+        padding: 0 2.5rem;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    section {
+        padding: 3rem 2rem;
+    }
+
+    .about-content,
+    .mastercamp-content,
+    .contact-content {
+        padding: 0 2rem;
+    }
+
+    /* Ensure text has proper breathing room */
+    p, h1, h2, h3, h4, h5, h6, ul, ol {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Reset padding for nested elements */
+    .container p,
+    .container h1,
+    .container h2,
+    .container h3,
+    .container h4,
+    .container h5,
+    .container h6,
+    .container ul,
+    .container ol {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    /* Center CTA button */
+    .cta-button {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 200px;
+    }
+
+    /* Add margin to text content */
+    .text-content p,
+    .feature-item p,
+    .feature-item h3,
+    .about-content p,
+    .mastercamp-content h3,
+    section p,
+    section h3 {
+        margin: 1.5rem 3rem;
+        line-height: 1.8;
+        max-width: calc(100% - 6rem);
+        text-align: justify;
+    }
+
+    /* Improve feature items spacing */
+    .feature-item {
+        margin: 2rem;
+        padding: 2rem;
+    }
+
+    .feature-item ul,
+    .feature-item ol {
+        padding-left: 2rem;
+        margin: 1rem 0;
+    }
+
+    .feature-item li {
+        margin: 0.8rem 0;
+    }
+
+    /* Fix LINE QR and button display */
+    .line-contact-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0 20px;
+    }
+
+    .line-qr {
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .line-button img {
+        max-width: 100%;
+        height: auto;
+    }
+
     .hero h1 {
         font-size: 1.8rem;
     }
