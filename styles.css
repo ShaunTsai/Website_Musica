@@ -597,8 +597,8 @@ h3 {
 
     /* Ensure text has proper breathing room */
     p, h1, h2, h3, h4, h5, h6, ul, ol {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         max-width: 100%;
         box-sizing: border-box;
     }
@@ -636,9 +636,9 @@ h3 {
     section p,
     section h3 {
         margin: 1rem auto;
-        padding: 0 1.25rem;
+        padding: 0 1.5rem;
         line-height: 1.8;
-        max-width: calc(100% - 2.5rem);
+        max-width: calc(100% - 3rem);
         text-align: justify;
         box-sizing: border-box;
     }
@@ -665,8 +665,8 @@ h3 {
 
     .feature-item ul,
     .feature-item ol {
-        padding-left: 1.5rem;
-        padding-right: 1rem;
+        padding-left: 1.75rem;
+        padding-right: 1.25rem;
         margin: 0.8rem 0;
     }
 
@@ -679,7 +679,7 @@ h3 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 1.25rem;
         padding: 0;
         margin: 0;
         max-width: 100%;
