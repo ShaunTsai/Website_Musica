@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#5D4E6D">
     <title>Musica Bellethique 法雅音樂 - Opera Vocalist Master Camp</title>
-    <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <link rel="preload" as="image" href="images/Hero.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="images/logo.png" fetchpriority="high">
+    <link rel="preconnect" href="https://qr-official.line.me">
+    <link rel="preconnect" href="https://scdn.line-apps.com">
+    <link rel="dns-prefetch" href="https://qr-official.line.me">
+    <link rel="dns-prefetch" href="https://scdn.line-apps.com">
+    <script src="test.js" defer></script>
+    <script src="performance-test.js" defer></script>
+    <script src="lazy-load-test.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -24,7 +35,7 @@
     <header class="hero">
         <div class="container hero-content">
             <div class="hero-main">
-                <img src="images/logo.png" alt="Musica Bellethique Logo" class="hero-logo-image">
+                <img src="images/logo.png" alt="Musica Bellethique Logo" class="hero-logo-image" fetchpriority="high">
                 <div class="hero-text">
                     <h1>你的藝術之路，<br>從此通往國際職業舞台。</h1>
                     <p class="subtitle">2025 法雅音樂「與經紀人有約」聲樂大師營，開放報名中</p>
@@ -77,10 +88,10 @@
                     </div>
                 </div>
                 <div class="video-section">
-                    <h3>大師營 - 大師訪談影片</h3>
+                    <h3>大師訪談影片</h3>
                     <div class="video-container">
                         <!-- Replace VIDEO_ID with your YouTube video ID -->
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <div class="download-section">
                         <a href="https://drive.google.com/file/d/1c0RAx9-KlUUs0G5gFTnCUja3Yh7Bh3qE/view?usp=sharing" class="download-button">下載活動簡章，了解詳情</a>
@@ -95,9 +106,9 @@
             <h2>聯絡我們</h2>
             <h3>加入 Line 官方帳號，將由專員為您諮詢服務</h3>
             <div class="line-contact-content">
-                <img src="https://qr-official.line.me/gs/M_450spaou_BW.png?oat_content=qr" alt="LINE QR Code" class="line-qr">
+                <img src="https://qr-official.line.me/gs/M_450spaou_BW.png?oat_content=qr" alt="LINE QR Code" class="line-qr" loading="lazy">
                 <a href="https://lin.ee/8x5GFC2" class="line-button">
-                    <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="72" border="0">
+                    <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="72" border="0" loading="lazy">
                 </a>
             </div>
         </div>
