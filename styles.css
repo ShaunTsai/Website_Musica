@@ -185,6 +185,8 @@ body {
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #f0f0f0; /* Light background while loading */
+    min-height: 315px; /* Minimum height to prevent collapse */
 }
 
 .video-container iframe {
